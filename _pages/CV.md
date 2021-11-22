@@ -1,7 +1,10 @@
 ---
 layout: page
 permalink: /CV/
+redirect: https://unsplash.com
 title: CV
-description: My CV can be found <a href="/Assets/pdf/Walter Wu CV.pdf">here</a>
 nav: true
 ---
+If download has started, click [here](/Assets/pdf/Walter Wu CV.pdf)
+
+<meta http-equiv="refresh" content="0; url=/Assets/pdf/Walter Wu CV.pdf" />
