@@ -1,11 +1,13 @@
 ---
 layout: page
-title: project 1
+title: DualNeRF
 description: a project with a background image
 img: /assets/img/12.jpg
 importance: 1
 category: work
 ---
+
+I worked with [Lourdes Agapito](http://www0.cs.ucl.ac.uk/staff/L.Agapito/) during 2020-2021 on DualNeRF, a novel view synthesis method that incorprates the extremely popular implicit neural representation, [NeRF](https://www.matthewtancik.com/nerf). DualNeRF is able to reconstruct 3D geometry and apperance of target object from a single RGB image, and does not require any expensive 3D annotations for supervision. A full Master thesis report can be found [here](/Assets/pdf/Walter_Master_Thesis.pdf).
 
 Every project has a beautiful feature showcase page.
 It's easy to include images in a flexible 3-column grid format.
