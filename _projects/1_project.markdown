@@ -1,7 +1,7 @@
 ---
 layout: page
 title: DualNeRF
-description: a project with a background image
+description: Generalizable single view reconstruction with NeRF
 img: /assets/img/depth_query_def.png
 importance: 1
 category: work

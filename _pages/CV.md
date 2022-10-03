@@ -1,7 +1,6 @@
 ---
 layout: page
 permalink: /CV/
-redirect: https://unsplash.com
 title: CV
 nav: true
 ---
