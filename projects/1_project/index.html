@@ -11,7 +11,7 @@
   Tianhao (Walter)  Wu
 
 
-  | blog
+  | DualNeRF
 
 </title>
 <meta name="description" content="A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
@@ -37,7 +37,7 @@
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐱</text></svg>">
 
 <link rel="stylesheet" href="/assets/css/main.css">
-<link rel="canonical" href="/blog/">
+<link rel="canonical" href="/projects/1_project/">
 
 <!-- JQuery -->
 <!-- jQuery -->
@@ -110,8 +110,6 @@
           
           
           
-          
-          
           <li class="nav-item ">
               <a class="nav-link" href="/CV/">
                 CV
@@ -154,56 +152,39 @@
     <div class="container mt-5">
       <div class="post">
 
-  <div class="header-bar">
-    <h1></h1>
-    <h2></h2>
-  </div>
+  <header class="post-header">
+    <h1 class="post-title">DualNeRF</h1>
+    <p class="post-description">Generalizable single view reconstruction with NeRF</p>
+  </header>
 
+  <article>
+    <p>I worked with <a href="http://www0.cs.ucl.ac.uk/staff/L.Agapito/">Lourdes Agapito</a> during 2020-2021 on DualNeRF, a novel view synthesis method that incorprates the extremely popular implicit neural representation, <a href="https://www.matthewtancik.com/nerf">NeRF</a>. DualNeRF is able to reconstruct 3D geometry and apperance of target object from a single RGB image, and does not require any expensive 3D annotations for supervision. A full Master thesis report can be found <a href="/assets/pdf/Walter_Master_Thesis.pdf">here</a>.</p>
 
-  <ul class="post-list">
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2021/distill/">a distill-style blog post</a></h3>
-        <p class="post-meta">May 22, 2021</p>
-        <p>an example of a distill-style blog post and main elements</p>
-      </li>
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2020/github-metadata/">a post with github metadata</a></h3>
-        <p class="post-meta">September 28, 2020</p>
-        <p>a quick run down on accessing github metadata.</p>
-      </li>
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2020/twitter/">a post with twitter</a></h3>
-        <p class="post-meta">September 28, 2020</p>
-        <p>an example of a blog post with twitter</p>
-      </li>
-    
-  </ul>
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <img class="img-fluid rounded z-depth-1" src="/assets/img/arch_query_depth_with_global_high.png" alt="" title="example image" />
+    </div>
+</div>
+<div class="caption">
+    DualNeRF Network Architecture
+</div>
 
-  
-<nav aria-label="Blog page naviation">
-  <ul class="pagination pagination-lg justify-content-center">
-    <li class="page-item disabled">
-      <a class="page-link" href="" tabindex="-1" aria-disabled="">Newer</a>
-    </li>
-    
-      
-        <li class="page-item active"><a class="page-link" href="/blog/index.html" title="blog">1</a></li>
-      
-        <li class="page-item "><a class="page-link" href="/blog/page/2/index.html" title="blog - page 2">2</a></li>
-      
-        <li class="page-item "><a class="page-link" href="/blog/page/3/index.html" title="blog - page 3">3</a></li>
-      
-    
-    <li class="page-item ">
-      <a class="page-link" href="/blog/page/2/">Older</a>
-    </li>
-  </ul>
-</nav>
+<p>DualNeRF encodes the input view into a 3D feature volume, where each 1D feature vector corresponds to a pixel in the input image. A local NeRF-like decoder conditions on the pixel feature vector that contains the query point, while a global decoder conditions on the whole feature volume to give their predictions of radiance and density respectively. In the end, two set of predictions are combined using weighted sum, where weights are their densities respectively.</p>
 
+<p>Compared to the concurrent work <a href="https://arxiv.org/abs/2012.02190">pixelNeRF</a>, DualNeRF uses an extra global decoder to account for global rendering factors, such as illumination brightness. We also use a simplified query input to the local decoder, where the Euclidean distance between camera and query point is supplied instead of query coordinate. This gives more interpretable information to the network and forces it to fully condition on the pixel feature supplied.</p>
 
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <img class="img-fluid rounded z-depth-1" src="/assets/img/shapenet_demo.png" alt="" title="example image" />
+    </div>
+</div>
+<div class="caption">
+    Qualitative Evaluation on ShapeNet Car Dataset
+</div>
+
+<p>The figure above shows a qualitative comparison among our DualNeRF, NeRF and a modified implementation of pixelNeRF, which uses smaller network and less training data due to hardware constraints.</p>
+
+  </article>
 
 </div>
 

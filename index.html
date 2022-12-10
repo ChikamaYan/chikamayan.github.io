@@ -11,8 +11,6 @@
   Tianhao (Walter)  Wu
 
 
-  | blog
-
 </title>
 <meta name="description" content="A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 ">
@@ -37,7 +35,7 @@
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐱</text></svg>">
 
 <link rel="stylesheet" href="/assets/css/main.css">
-<link rel="canonical" href="/blog/">
+<link rel="canonical" href="/">
 
 <!-- JQuery -->
 <!-- jQuery -->
@@ -76,10 +74,6 @@
     <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top">
     <div class="container">
       
-      <a class="navbar-brand title font-weight-lighter" href="/">
-       <span class="font-weight-bold">Tianhao (Walter)</span>   Wu
-      </a>
-      
       <!-- Navbar Toggle -->
       <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="sr-only">Toggle navigation</span>
@@ -90,16 +84,16 @@
       <div class="collapse navbar-collapse text-right" id="navbarNav">
         <ul class="navbar-nav ml-auto flex-nowrap">
           <!-- About -->
-          <li class="nav-item ">
+          <li class="nav-item active">
             <a class="nav-link" href="/">
               about
+              
+                <span class="sr-only">(current)</span>
               
             </a>
           </li>
           
           <!-- Other pages -->
-          
-          
           
           
           
@@ -154,56 +148,170 @@
     <div class="container mt-5">
       <div class="post">
 
-  <div class="header-bar">
-    <h1></h1>
-    <h2></h2>
-  </div>
+  <header class="post-header">
+    <h1 class="post-title">
+     <span class="font-weight-bold">Tianhao (Walter)</span>  Wu
+    </h1>
+     <p class="desc"><!-- <a href="#">Affiliations</a>. Address. Contacts. Moto. Etc.--></p>
+  </header>
 
+  <article>
+    
+    <div class="profile float-right">
+      
+        <img class="img-fluid z-depth-1 rounded" src="/assets/img/prof_pic.jpg">
+      
+      
+        <div class="address">
+          <p>SW 210, Computer Laboratory</p> <p>15 JJ Thomson Ave</p> <p>Cambridge, CB3 0FD</p> <!-- <p><a href="mailto: tw554@cam.ac.uk"> Email</a></p> <p><a href="https://github.com/ChikaYan" target="_blank"> Github</a></p> <p><a href="https://www.linkedin.com/in/waltertianhaowu/" target="_blank"> LinkedIn</a></p> -->
 
-  <ul class="post-list">
+        </div>
+      
+    </div>
     
-      <li>
-        <h3><a class="post-title" href="/blog/2021/distill/">a distill-style blog post</a></h3>
-        <p class="post-meta">May 22, 2021</p>
-        <p>an example of a distill-style blog post and main elements</p>
-      </li>
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2020/github-metadata/">a post with github metadata</a></h3>
-        <p class="post-meta">September 28, 2020</p>
-        <p>a quick run down on accessing github metadata.</p>
-      </li>
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2020/twitter/">a post with twitter</a></h3>
-        <p class="post-meta">September 28, 2020</p>
-        <p>an example of a blog post with twitter</p>
-      </li>
-    
-  </ul>
 
+    <div class="clearfix">
+      <p>Hi, I’m a PhD student at the Unveristy of Cambridge, supervised by <a href="https://www.cl.cam.ac.uk/~aco41/">Cengiz Öztireli</a>. My current research is mainly on image-based rendering and implicit neural representation. I’m interested in a wide range of topics including novel view synthesis, 3D reconstruction, video learning and scene decomposition.</p>
+
+<!-- Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com){:target="\_blank"}. You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+
+Put your address / P.O. box / other info right below your picture. You can also disable any these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+
+Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/){:target="\_blank"} and [Academicons](https://jpswalsh.github.io/academicons/){:target="\_blank"}, like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them. -->
+=
+    </div>
+
+    
+      <div class="news">
+  <h2>news</h2>
   
-<nav aria-label="Blog page naviation">
-  <ul class="pagination pagination-lg justify-content-center">
-    <li class="page-item disabled">
-      <a class="page-link" href="" tabindex="-1" aria-disabled="">Newer</a>
-    </li>
+    <div class="table-responsive">
+      <table class="table table-sm table-borderless">
+      
+      
+        <tr>
+          <th scope="row">Sep 20, 2022</th>
+          <td>
+            
+              Our paper <a href="https://d2nerf.github.io/">D<sup>2</sup>NeRF: Self-Supervised Decoupling of Dynamic and Static Objects from a Monocular Video</a> has been accepted at NeurIPS 2022
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <img class="img-fluid rounded z-depth-1" src="/assets/img/d2nerf_news2.gif" alt="" title="example image" width="350px" height="auto" />
+    </div>
+</div>
+
+            
+          </td>
+        </tr>
+      
+        <tr>
+          <th scope="row">Apr 20, 2022</th>
+          <td>
+            
+              I have been awarded with <a href="https://www.cape.eng.cam.ac.uk/Activities/Acorn/CAPA">CAPE Acorn Postgraduate Research Award (CAPA) 2022</a> with one of the seven best engineering research proposals in Cambridge
+
+            
+          </td>
+        </tr>
+      
+        <tr>
+          <th scope="row">Mar 15, 2022</th>
+          <td>
+            
+              Our paper <a href="https://arxiv.org/abs/2203.03570">Kubric: A scalable dataset generator</a> has been accepted at CVPR 2022
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <img class="img-fluid rounded z-depth-1" src="/assets/img/kubric.gif" alt="" title="example image" width="250px" height="auto" />
+    </div>
+</div>
+
+            
+          </td>
+        </tr>
+      
+        <tr>
+          <th scope="row">Oct 6, 2021</th>
+          <td>
+            
+              I’m now supervising Further Graphics.
+
+            
+          </td>
+        </tr>
+      
+      </table>
+    </div>
+  
+</div>
+
     
-      
-        <li class="page-item active"><a class="page-link" href="/blog/index.html" title="blog">1</a></li>
-      
-        <li class="page-item "><a class="page-link" href="/blog/page/2/index.html" title="blog - page 2">2</a></li>
-      
-        <li class="page-item "><a class="page-link" href="/blog/page/3/index.html" title="blog - page 3">3</a></li>
-      
-    
-    <li class="page-item ">
-      <a class="page-link" href="/blog/page/2/">Older</a>
-    </li>
-  </ul>
-</nav>
 
 
+    <br><br><br>
+    <header class="post-header">
+      <h1 class="post-title">Publications</h1>
+    </header>
+
+    <b>D<sup>2</sup>NeRF: Self-Supervised Decoupling of Dynamic and Static Objects from a Monocular Video</b>
+    <br>
+    <b>Tianhao Wu</b>, Fangcheng Zhong, Andrea Tagliasacchi, Forrester Cole, Cengiz Oztireli
+    <br>
+    CVPR 2022
+    <br>
+    
+    <button type="button" onclick="location.href = 'https://d2nerf.github.io/';">Project Page</button>
+    <button type="button" onclick="location.href = 'https://arxiv.org/abs/2205.15838';">Paper</button>
+    
+    <br>
+    <br>
+    
+    <b>Kubric: a scalable dataset generator</b>
+    <br>
+    Klaus Greff and Francois Belletti and Lucas Beyer and Carl Doersch and
+    Yilun Du and Daniel Duckworth and David J Fleet and Dan Gnanapragasam and
+    Florian Golemo and Charles Herrmann and Thomas Kipf and Abhijit Kundu and
+    Dmitry Lagun and Issam Laradji and Hsueh-Ti (Derek) Liu and Henning Meyer and
+    Yishu Miao and Derek Nowrouzezahrai and Cengiz Oztireli and Etienne Pot and
+    Noha Radwan and Daniel Rebain and Sara Sabour and Mehdi S. M. Sajjadi and Matan Sela and
+    Vincent Sitzmann and Austin Stone and Deqing Sun and Suhani Vora and Ziyu Wang and
+    <b>Tianhao Wu</b> and Kwang Moo Yi and Fangcheng Zhong and Andrea Tagliasacchi
+    <br>
+    CVPR 2022
+    <br>
+    
+    <button type="button" onclick="location.href = 'https://github.com/google-research/kubric';">Project Page</button>
+    <button type="button" onclick="location.href = 'https://arxiv.org/abs/2203.03570';">Paper</button>
+
+    
+
+    
+    <div class="social">
+      <div class="contact-icons">
+        <a href="mailto:%74%77%35%35%34@%63%61%6D.%61%63.%75%6B"><i class="fas fa-envelope"></i></a>
+
+
+
+
+<a href="https://github.com/ChikaYan" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+<a href="https://www.linkedin.com/in/waltertianhaowu" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="contact-note"></div>
+    </div>
+    
+  </article>
 
 </div>
 
