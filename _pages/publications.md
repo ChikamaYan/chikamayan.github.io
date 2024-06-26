@@ -13,11 +13,41 @@ nav: true
 {% endfor %}
 </div>
 
+<b>Gaussian Head & Shoulders: High Fidelity Neural Upper Body Avatars with Anchor Gaussian Guided Texture Warping</b>
+<br>
+<b>Tianhao Wu</b>, Jing Yang, Zhilin Guo, Jingyi Wan, Fangcheng Zhong, Cengiz Oztireli
+<br>
+Arxiv
+<br>
+
+<button type="button" onclick="location.href = 'https://gaussian-head-shoulders.netlify.app/';">Project Page</button>
+<button type="button" onclick="location.href = 'https://arxiv.org/abs/2405.12069';">Paper</button>
+
+<br>
+<br>
+
+
+
+
+<b>αSurf: Implicit Surface Reconstruction for Semi-Transparent and Thin Objects with Decoupled Geometry and Opacity</b>
+<br>
+<b>Tianhao Wu</b>, Hanxue Liang, Fangcheng Zhong, Gernot Riegler, Shimon Vainer, Cengiz Oztireli
+<br>
+Arxiv
+<br>
+
+<button type="button" onclick="location.href = 'https://alphasurf.netlify.app/';">Project Page</button>
+<button type="button" onclick="location.href = 'https://arxiv.org/abs/2303.10083';">Paper</button>
+
+<br>
+<br>
+
+
 <b>D<sup>2</sup>NeRF: Self-Supervised Decoupling of Dynamic and Static Objects from a Monocular Video</b>
 <br>
 <b>Tianhao Wu</b>, Fangcheng Zhong, Andrea Tagliasacchi, Forrester Cole, Cengiz Oztireli
 <br>
-CVPR 2022
+NeuRIPS 2022
 <br>
 
 <button type="button" onclick="location.href = 'https://d2nerf.github.io/';">Project Page</button>
@@ -25,6 +55,7 @@ CVPR 2022
 
 <br>
 <br>
+
 
 <b>Kubric: a scalable dataset generator</b>
 <br>
